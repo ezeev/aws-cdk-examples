@@ -11,9 +11,9 @@ export class AwsBlogStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const domainName = 'awsevan.com'
-    const hostedZoneId = 'Z07985312LBBV0N39UCHT'
-    const certArn = 'arn:aws:acm:us-west-2:027027607183:certificate/d49c9284-4a1a-477b-a151-c7ae43a87d49'
+    const domainName = 'YOUR_DOMAIN'
+    const hostedZoneId = 'YOUR_HOSTED_ZONEID'
+    const certArn = 'YOUR_CERT_ARN'
 
   
     const getHelloLambda = new lambda.Function(this, 'GetHelloFunction', {
